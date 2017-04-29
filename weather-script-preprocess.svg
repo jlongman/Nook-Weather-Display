@@ -127,366 +127,150 @@
      height="793.75"
      x="3.125"
      y="3.125" />
-  <use
-     height="800"
-     width="600"
-     y="0"
-     x="0"
-     id="use3455"
-     xlink:href="#ICON_ONE"
-     transform="matrix(1.6317491,0,0,1.6317491,262.80306,121.81934)" />
-  <use
-     height="800"
-     width="600"
-     y="0"
-     x="0"
-     id="use3459"
-     xlink:href="#ICON_TWO"
-     transform="matrix(0.78710737,0,0,0.78710737,228.92017,323.45698)" />
-  <use
-     height="800"
-     width="600"
-     y="0"
-     x="0"
-     id="use3463"
-     xlink:href="#ICON_THREE"
-     transform="matrix(0.78710737,0,0,0.78710737,359.44855,323.45698)" />
-  <use
-     height="800"
-     width="600"
-     y="0"
-     x="0"
-     id="use3467"
-     xlink:href="#ICON_FOUR"
-     transform="matrix(0.78710737,0,0,0.78710737,489.97692,323.45698)" />
-  <use
-     height="800"
-     width="600"
-     y="0"
-     x="0"
-     id="use3471"
-     xlink:href="#ICON_FIVE"
-     transform="matrix(1.7871074,0,0,1.7871074,109.97692,323.45698)" />
-  <text
-     id="text3471"
-     x="583.90283"
-     y="53.10643"
-     font-size="35px"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.95749903px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';text-align:end;writing-mode:lr;text-anchor:end;"
-     sodipodi:linespacing="125%">Today:</text>
-  <text
-     id="text3473"
-     x="494.7453"
-     y="124.66081"
-     font-size="35px"
-     style="font-size:22.95729828px;text-anchor:middle;font-family:DejaVu Sans">High:</text>
-  <text
-     id="text3475"
-     x="547.51538"
-     y="182.05342"
-     font-size="100px"
-     style="font-size:65.59227753px;text-anchor:end;font-family:DejaVu Sans">HIGH_ONE</text>
-  <text
-     id="text3477"
-     x="561.67596"
-     y="164.52798"
-     font-size="64px"
-     style="font-size:41.97906113px;text-anchor:middle;font-family:DejaVu Sans">°F</text>
-  <text
-     id="text3479"
-     x="491.1582"
-     y="225.3004"
-     font-size="35px"
-     style="font-size:22.95729828px;text-anchor:middle;font-family:DejaVu Sans">Low:</text>
-  <text
-     id="text3481"
-     x="547.19507"
-     y="280.86646"
-     font-size="100px"
-     style="font-size:65.59227753px;text-anchor:end;font-family:DejaVu Sans">LOW_ONE</text>
-  <text
-     id="text3483"
-     x="561.67596"
-     y="263.34103"
-     font-size="64px"
-     style="font-size:41.97906113px;text-anchor:middle;font-family:DejaVu Sans">°F</text>
-  <text
-     id="text3485"
-     x="269.54099"
-     y="317.94559"
-     font-size="32px"
-     style="font-size:20.98953056px;font-family:'DejaVu Sans';text-anchor:middle">Tomorrow:</text>
-  <text
-     id="text3487"
-     x="251.19395"
-     y="417.78976"
-     font-size="20px"
-     style="font-size:13.11845589px;font-family:'DejaVu Sans';text-anchor:middle">High:</text>
-  <text
-     id="text3489"
-     x="278.15274"
-     y="451.00705"
-     font-size="58px"
-     style="font-size:38.04352188px;font-family:'DejaVu Sans';text-anchor:end">HIGH_TWO</text>
-  <text
-     id="text3491"
-     x="289.93164"
-     y="440.8638"
-     font-size="37px"
-     style="font-size:24.26914406px;font-family:'DejaVu Sans';text-anchor:middle">°F</text>
-  <text
-     id="text3493"
-     x="249.19199"
-     y="476.03723"
-     font-size="20px"
-     style="font-size:13.11845589px;font-family:'DejaVu Sans';text-anchor:middle">Low:</text>
-  <text
-     id="text3495"
-     x="278.11563"
-     y="508.19739"
-     font-size="58px"
-     style="font-size:38.04352188px;font-family:'DejaVu Sans';text-anchor:end">LOW_TWO</text>
-  <text
-     id="text3497"
-     x="289.93164"
-     y="498.05414"
-     font-size="37px"
-     style="font-size:24.26914406px;font-family:'DejaVu Sans';text-anchor:middle">°F</text>
-  <text
-     id="text3499"
-     x="399.00888"
-     y="318.59125"
-     font-size="32px"
-     style="font-size:20.98953056px;font-family:'DejaVu Sans';text-anchor:middle">DAY_THREE:</text>
-  <text
-     id="text3501"
-     x="381.7226"
-     y="417.78976"
-     font-size="20px"
-     style="font-size:13.11845589px;font-family:'DejaVu Sans';text-anchor:middle">High:</text>
-  <text
-     id="text3503"
-     x="408.0882"
-     y="451.00705"
-     font-size="58px"
-     style="font-size:38.04352188px;font-family:'DejaVu Sans';text-anchor:end">HIGH_THREE</text>
-  <text
-     id="text3505"
-     x="420.46027"
-     y="440.8638"
-     font-size="37px"
-     style="font-size:24.26914406px;font-family:'DejaVu Sans';text-anchor:middle">°F</text>
-  <text
-     id="text3507"
-     x="379.72061"
-     y="476.03723"
-     font-size="20px"
-     style="font-size:13.11845589px;font-family:'DejaVu Sans';text-anchor:middle">Low:</text>
-  <text
-     id="text3509"
-     x="408.04181"
-     y="508.19739"
-     font-size="58px"
-     style="font-size:38.04352188px;font-family:'DejaVu Sans';text-anchor:end">LOW_THREE</text>
-  <text
-     id="text3511"
-     x="420.46027"
-     y="498.05414"
-     font-size="37px"
-     style="font-size:24.26914406px;font-family:'DejaVu Sans';text-anchor:middle">°F</text>
-  <text
-     id="text3513"
-     x="529.87573"
-     y="318.59125"
-     font-size="32px"
-     style="font-size:20.98953056px;font-family:'DejaVu Sans';text-anchor:middle">DAY_FOUR:</text>
-  <text
-     id="text3515"
-     x="512.25122"
-     y="417.78976"
-     font-size="20px"
-     style="font-size:13.11845589px;font-family:'DejaVu Sans';text-anchor:middle">High:</text>
-  <text
-     id="text3517"
-     x="538.71875"
-     y="451.00705"
-     font-size="58px"
-     style="font-size:38.04352188px;font-family:'DejaVu Sans';text-anchor:end">HIGH_FOUR</text>
-  <text
-     id="text3519"
-     x="550.98889"
-     y="440.8638"
-     font-size="37px"
-     style="font-size:24.26914406px;font-family:'DejaVu Sans';text-anchor:middle">°F</text>
-  <text
-     id="text3521"
-     x="510.24927"
-     y="476.03723"
-     font-size="20px"
-     style="font-size:13.11845589px;font-family:'DejaVu Sans';text-anchor:middle">Low:</text>
-  <text
-     id="text3523"
-     x="538.99683"
-     y="508.19739"
-     font-size="58px"
-     style="font-size:38.04352188px;font-family:'DejaVu Sans';text-anchor:end">LOW_FOUR</text>
-  <text
-     id="text3525"
-     x="550.98889"
-     y="498.05414"
-     font-size="37px"
-     style="font-size:24.26914406px;font-family:'DejaVu Sans';text-anchor:middle">°F</text>
-  <path
-     d="m 332.55571,306.25756 0,210.87918 1.96777,0 0,-210.87918 -1.96777,0 z"
-     id="path3527"
-     inkscape:connector-curvature="0" />
-  <path
-     d="m 463.08435,306.25756 0,210.87918 1.96777,0 0,-210.87918 -1.96777,0 z"
-     id="path3529"
-     inkscape:connector-curvature="0" />
+
+
+
+<g transform="scale(2.25) translate(35 15)">
+ <use xlink:href="#ICON_ONE"/>
+</g>
+
+
+<g transform="scale(0.8) translate(75 400)">
+<use xlink:href="#ICON_TWO"/>
+</g>
+<g transform="scale(0.8) translate(325 400)">
+<use xlink:href="#ICON_THREE"/>
+</g>
+<g transform="scale(0.8) translate(575 400)">
+<use xlink:href="#ICON_FOUR"/>
+</g>
+
+
+<g font-family="DejaVu Sans">
+<text style="text-anchor:end;" font-size="22px" y="52.256058" x="575">Today:</text>
+<text style="text-anchor:end;" font-size="22px" y="100.70689" x="575">High:</text>
+<text style="text-anchor:end;" font-size="65px" y="162" x="526.72095">HIGH_ONE</text>
+<text style="text-anchor:middle;" font-size="42px" y="144" x="548.30981">°C</text>
+<text style="text-anchor:end;" font-size="22px" y="205" x="575">Low:</text>
+<text style="text-anchor:end;" font-size="65px" y="260" x="526.23267">LOW_ONE</text>
+<text style="text-anchor:middle;" font-size="42px" y="243" x="548.30981">°C</text>
+
+<text style="text-anchor:middle;" font-size="22px" y="317" x="102.92969">Tomorrow:</text>
+<text style="text-anchor:middle;" font-size="13px" y="417" x="74.958336">High:</text>
+<text style="text-anchor:end;" font-size="38px" y="451" x="116.05887">HIGH_TWO</text>
+<text style="text-anchor:middle;" font-size="24px" y="440" x="134.01662">°C</text>
+<text style="text-anchor:middle;" font-size="13px" y="476" x="71.906197">Low:</text>
+<text style="text-anchor:end;" font-size="38px" y="508" x="116.00232">LOW_TWO</text>
+<text style="text-anchor:middle;" font-size="24px" y="498" x="134.01663">°C</text>
+
+<text style="text-anchor:middle;" font-size="22px" y="317" x="300.3125">DAY_THREE:</text>
+<text style="text-anchor:middle;" font-size="13px" y="418" x="273.95834">High:</text>
+<text style="text-anchor:end;" font-size="38px" y="451" x="314.15454">HIGH_THREE</text>
+<text style="text-anchor:middle;" font-size="24px" y="440" x="333.01663">°C</text>
+<text style="text-anchor:middle;" font-size="13px" y="476" x="270.90619">Low:</text>
+<text style="text-anchor:end;" font-size="38px" y="508" x="314.08383">LOW_THREE</text>
+<text style="text-anchor:middle;" font-size="24px" y="498" x="333.0166">°C</text>
+
+<text style="text-anchor:middle;" font-size="22px" y="317" x="499.82813">DAY_FOUR:</text>
+<text style="text-anchor:middle;" font-size="13px" y="417" x="472.95834">High:</text>
+<text style="text-anchor:end;" font-size="38px" y="451" x="513.30994">HIGH_FOUR</text>
+<text style="text-anchor:middle;" font-size="24px" y="440" x="532.0166">°C</text>
+<text style="text-anchor:middle;" font-size="13px" y="476" x="469.90619">Low:</text>
+<text style="text-anchor:end;" font-size="38px" y="508" x="513.73383">LOW_FOUR</text>
+<text style="text-anchor:middle;" font-size="24px" y="498" x="532.0166">°C</text>
+</g>
+
+
+
+
+
+<path d="m199,300,0,201.5,3,0,0-150-3,0z"/>
+<path d="m398,300,0,201.5,3,0,0-150-3,0z"/>
+
+
+
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="22.784809"
-     y="558.22784"
+     y="658.22784"
      id="text3398"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3400"
        x="22.784809"
-       y="558.22784"
-       style="font-size:27.5px">Today's agenda</tspan></text>
+       y="608.22784"
+       style="font-size:27.5px">Agenda:</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;"
-     x="68.227844"
-     y="582.15192"
+     x="22.784809"
+     y="682.15192"
      id="text3402"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3404"
-       x="68.227844"
-       y="582.15192"
+       x="22.784809"
+       y="632.15192"
        style="font-size:17.5px;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">agenda1_date</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="55.613037"
-     y="602.5777"
+     y="650"
      id="text3402-8"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3404-0"
        x="55.613037"
-       y="602.5777"
+       y="650"
        style="font-size:20px">agenda1_title</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;"
-     x="68.096786"
-     y="627.46973"
+       x="22.784809"
+     y="675"
      id="text3402-84"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3404-5"
-       x="68.096786"
-       y="627.46973"
+       x="22.784809"
+       y="675"
        style="font-size:17.5px;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">agenda2_date</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="55.481979"
-     y="647.89551"
+     y="700"
      id="text3402-8-2"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3404-0-0"
        x="55.481979"
-       y="647.89551"
+       y="700"
        style="font-size:20px">agenda2_title</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;"
-     x="67.008179"
-     y="670.65961"
+       x="22.784809"
+     y="720"
      id="text3402-84-8"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3404-5-1"
-       x="67.008179"
-       y="670.65961"
+       x="22.784809"
+       y="720"
        style="font-size:17.5px;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">agenda3_date</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="54.393372"
-     y="691.08539"
+     y="740"
      id="text3402-8-2-5"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3404-0-0-4"
        x="54.393372"
-       y="691.08539"
+       y="740"
        style="font-size:20px">agenda3_title</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="24.818579"
-     y="79.735863"
-     id="text3402-4"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3404-9"
-       x="24.818579"
-       y="79.735863"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Currently reading:</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="24.462326"
-     y="98.043068"
-     id="text3402-4-2"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3404-9-9"
-       x="24.462326"
-       y="98.043068"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">current_title</tspan></text>
-  <rect
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.81859523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     id="rect3458"
-     width="187.52318"
-     height="0.84740478"
-     x="21.428286"
-     y="108.10407" />
-  <image
-     x="57.52318"
-     y="240"
-     height="100"
-     width="75"
-     xlink:href="#LINK_ONE"
-     id="image86" />
-  <image
-     x="57.52318"
-     y="360"
-     height="100"
-     width="75"
-     xlink:href="#LINK_TWO"
-     id="image89" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1"
-     id="rect4220"
-     width="144.68401"
-     height="131.64557"
-     x="25.189873"
-     y="113.92405" />
-  <flowRoot
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     id="flowRoot4222"><flowRegion
-       id="flowRegion4224"><use
-         x="0"
-         y="0"
-         xlink:href="#rect4220"
-         id="use4226" /></flowRegion><flowPara
-       id="flowPara4228">reading_count</flowPara></flowRoot></svg>
+</svg>
