@@ -1,7 +1,7 @@
 # Nook-Weather-Display
-based on 
-https://github.com/mrfunkyland/Nook-Weather-Display
-based on Kindle Weather Display by Matt Petroff
+- based on <br/>https://github.com/mrfunkyland/Nook-Weather-Display
+
+- which was based on Kindle Weather Display by Matt Petroff<br/>
 https://github.com/mpetroff/kindle-weather-display
 
 
