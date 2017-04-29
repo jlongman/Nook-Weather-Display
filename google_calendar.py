@@ -1,19 +1,19 @@
-client_id='12345yourid'
-client_secret='yoursecret'
-user_agent='xxxxxxxx/vXX' 
-developerKey='yourkey' 
-
 import os.path
+import json
+
+with open('data.json') as data_file:
+    data = json.load(data_file)["google"]
+
 here = os.path.dirname(os.path.realpath(__file__))
 storage_file = os.path.join(here, 'calendar.dat')
 
 import gflags
 import httplib2
 
-from apiclient.discovery import build
+from googleapiclient.discovery import build
 from oauth2client.file import Storage
 from oauth2client.client import OAuth2WebServerFlow
-from oauth2client.tools import run
+from oauth2client.tools import run_flow
 
 FLAGS = gflags.FLAGS
 
@@ -25,13 +25,13 @@ FLAGS = gflags.FLAGS
 # The client_id and client_secret are copied from the API Access tab on
 # the Google APIs Console
 FLOW = OAuth2WebServerFlow(
-    client_id=client_id,
-    client_secret=client_secret,
+    client_id=data["client_id"],
+    client_secret=data["client_secret"],
     scope='https://www.googleapis.com/auth/calendar',
-    user_agent=user_agent)
+    user_agent=data["user_agent"])
 
 # To disable the local server feature, uncomment the following line:
-FLAGS.auth_local_webserver = False
+#FLAGS.auth_local_webserver = False
 
 # If the Credentials don't exist or are invalid, run through the native client
 # flow. The Storage object will ensure that if successful the good
@@ -39,7 +39,7 @@ FLAGS.auth_local_webserver = False
 storage = Storage(storage_file)
 credentials = storage.get()
 if credentials is None or credentials.invalid == True:
-  credentials = run(FLOW, storage)
+  credentials = run_flow(FLOW, storage)
 
 # Create an httplib2.Http object to handle our HTTP requests and authorize it
 # with our good Credentials.
@@ -50,4 +50,4 @@ http = credentials.authorize(http)
 # the Google APIs Console
 # to get a developerKey for your own application.
 service = build(serviceName='calendar', version='v3', http=http,
-       developerKey=developerKey)
+       developerKey=data["developerKey"])

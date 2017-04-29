@@ -1,0 +1,14 @@
+{
+"openweather": "key",
+"calendarId" : "",
+"goodreads" : { 
+   "challenges": "" ,
+   "user" : ""
+  },
+"google": {
+    "client_id" : "",
+    "client_secret" : "",
+    "user_agent" : "xxxxxxxx/vXX",
+    "developerKey" : ""
+  }
+}
