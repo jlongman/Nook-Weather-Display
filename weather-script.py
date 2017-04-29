@@ -79,6 +79,7 @@
 import urllib, urllib2
 from xml.dom import minidom
 import datetime
+from datetime import timedelta 
 import codecs
 import google_calendar
 from lxml import html
@@ -247,11 +248,10 @@ calendarId = data["calendarId"]
 # # xml_day_one = dom.getElementsByTagName('start-valid-time')[0].firstChild.nodeValue[0:10]
 # # day_one = datetime.datetime.strptime(xml_day_one, '%Y-%m-%d')
 
-day_one = datetime.date.today()
-gTimeMin = '2015-01-12T00:00:00-06:00'
-gTimeMax = '2015-01-12T23:59:59-06:00'
-gTimeMin = str(day_one.year)+'-'+str(day_one.month)+'-'+str(day_one.day)+gTimeMin[10:]
-gTimeMax = str(day_one.year)+'-'+str(day_one.month)+'-'+str(day_one.day)+gTimeMax[10:]
+day_one = datetime.datetime.today().replace(microsecond=0)
+gTimeMin = day_one.isoformat() + "-06:00"
+next_week = day_one + timedelta(7)
+gTimeMax = next_week.isoformat() + "-06:00"
 
 #Fetch next three calendar appointments from google calendar
 print("Fetching calendar data...")
@@ -259,7 +259,7 @@ def getEvents(pageToken=None):
     events = google_calendar.service.events().list(
         calendarId=calendarId,
         singleEvents=True,
-        maxResults=4,
+        maxResults=3,
         orderBy='startTime',
         timeMin=gTimeMin,
         timeMax=gTimeMax,
@@ -268,17 +268,21 @@ def getEvents(pageToken=None):
     return events
 events = getEvents()
 event_time = [' ', ' ', ' ']
+event_time = []
 event_title = [' ', ' ', ' ']
+event_title = []
 event_number = 0
 while True:
     for event in events['items']:
         if 'date' in event['start']:
             print(event['start']['date'].encode('utf-8') + ' All Day')
-            event_time[event_number] = "All Day"
+	    event_time.append("All Day")
         if 'dateTime' in event['start']:
-            event_time[event_number] = event['start']['dateTime'].encode('utf-8')[11:16]
+            event_date = datetime.datetime.strptime(event['start']['dateTime'][:-6], "%Y-%m-%dT%H:%M:%S")
+            event_time.append(event_date.strftime("%A, %B %d %Y %I:%M%p"))
         print(event['start']['dateTime'].encode('utf-8'))
-        event_title[event_number] = event['summary'].encode('utf-8')
+	event_title.append(event['summary'].encode('utf-8'))
+
         print(event['summary'].encode('utf-8'))
         print('')
         event_number += 1
