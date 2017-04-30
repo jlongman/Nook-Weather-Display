@@ -91,13 +91,14 @@ import pyowm
 
 
 def covert_owm_to_noaa_icon(code):
-    icon = "fu"  # no idea
-    icon = "hi_shwrs"  # hmmm
-    icon = "mix"  # mix
-    icon = "raip"  # rain hail
-    icon = "sctfg"  # scattered fog
-    icon = "scttsra"  # scattered thundershowers, rain
-    icon = "shra"  # showers rain
+#    icon = "fu"  # no idea
+#    icon = "hi_shwrs"  # hmmm
+#    icon = "mix"  # mix
+#    icon = "raip"  # rain hail
+#    icon = "sctfg"  # scattered fog
+#    icon = "scttsra"  # scattered thundershowers, rain
+#    icon = "shra"  # showers rain
+    icon = ""
     if code == 511:
         icon = "fzra"  # freezing rain
     if code >= 600 and code <= 611:
@@ -192,7 +193,7 @@ lows = [None] * 4
 icons = [None] * 4
 
 weather = pyowm.OWM(API_key=data["openweather"])
-fc = weather.daily_forecast('Montreal, CA', limit=4)
+fc = weather.daily_forecast(data["location"], limit=4)
 for idx, weather in enumerate(fc.get_forecast().get_weathers()):
     code = weather.get_weather_code()
     ricon = covert_owm_to_noaa_icon(code)
