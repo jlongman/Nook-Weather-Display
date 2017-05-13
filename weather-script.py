@@ -78,6 +78,7 @@
 
 import urllib, urllib2
 from xml.dom import minidom
+from xml.sax.saxutils import escape
 import datetime
 from datetime import timedelta 
 import codecs
@@ -190,61 +191,24 @@ with open('data.json') as data_file:
 print("Fetching weather data...")
 highs = [None] * 4
 lows = [None] * 4
-icons = [None] * 4
+icons = [None] * 5
+longForecast = [None] * 4
 
 weather = pyowm.OWM(API_key=data["openweather"])
 fc = weather.daily_forecast(data["location"], limit=4)
 for idx, weather in enumerate(fc.get_forecast().get_weathers()):
     code = weather.get_weather_code()
-    ricon = covert_owm_to_noaa_icon(code)
     highs[idx] = "{0:.1f}".format(weather.get_temperature()["max"] - 273)
     lows[idx] = "{0:.1f}".format(weather.get_temperature()["min"] - 273)
-    icons[idx] = ricon
+    icons[idx] = covert_owm_to_noaa_icon(code)
+    longForecast[idx] = weather.get_detailed_status()
+    print("{}-{} as {} and {}".format(highs[idx], lows[idx], icons[idx], longForecast[idx]))
 
 print("Connecting to web services...")
 
 # google id for calendar data
 calendarId = data["calendarId"]
 
-# page1 = requests.get('http://www.goodreads.com/user_challenges/' + data["goodreads"]["challenges"])
-# page2 = requests.get('http://www.goodreads.com/user/show/' + data["goodreads"]["user"])
-# # page3 = requests.get('http://www.newyorker.com/magazine')
-# tree1 = html.fromstring(page1.text)
-# tree2 = html.fromstring(page2.text)
-# # tree3 = html.fromstring(page3.text)
-# print("Fetching book data from Goodreads...")
-# bookCount = tree1.xpath('//div[@class="progressText"]/text()')
-# currentBook = tree2.xpath('//a[@class="bookTitle"]/text()')
-# if len(currentBook[0]) > 25:
-#     currentBook[0] = currentBook[0][0:30] + "..."
-#
-#
-# stripped = bookCount[0].rstrip()
-# stripped = stripped.splitlines()
-#
-# img1 = tree2.xpath('//div[@class="firstcol"]')
-# # print page2.text
-# testString = ''
-# for child in img1[0]:
-#     testString += html.tostring(child)
-# coverUrl = re.search("(?P<url>https?://[^\"]+)", testString).group("url")
-#
-# print coverUrl
-# scriptDir = os.path.dirname(os.path.realpath(__file__))
-# urllib.urlretrieve(coverUrl, scriptDir + "\cover.jpg")
-# urllib.urlretrieve(coverUrl, scriptDir + "\NYcover.jpg")
-# # #FETCH NEWYORKER COVER [CLUNKY - MAY STOP WORKING IF WEB PAGE LAYOUT CHANGES]
-# # img2 = tree3.xpath('//div[@class="cover-info module"]')
-# #
-# # coverUrlString = img2[0].xpath('//img/@src')[3]
-# # print coverUrlString
-# # coverUrl2 = re.search("(?P<url>https?://[^\"]+)", coverUrlString).group("url")
-# # print coverUrl2
-# # scriptDir = os.path.dirname(os.path.realpath(__file__))
-# # urllib.urlretrieve(coverUrl2, scriptDir + "\NYcover.jpg")
-#
-#
-#
 # # Parse dates
 # # xml_day_one = dom.getElementsByTagName('start-valid-time')[0].firstChild.nodeValue[0:10]
 # # day_one = datetime.datetime.strptime(xml_day_one, '%Y-%m-%d')
@@ -254,7 +218,7 @@ gTimeMin = day_one.isoformat() + "-06:00"
 next_week = day_one + timedelta(7)
 gTimeMax = next_week.isoformat() + "-06:00"
 
-#Fetch next three calendar appointments from google calendar
+# Fetch next three calendar appointments from google calendar
 print("Fetching calendar data...")
 def getEvents(pageToken=None):
     events = google_calendar.service.events().list(
@@ -277,12 +241,12 @@ while True:
     for event in events['items']:
         if 'date' in event['start']:
             print(event['start']['date'].encode('utf-8') + ' All Day')
-	    event_time.append("All Day")
+        event_time.append("All Day")
         if 'dateTime' in event['start']:
             event_date = datetime.datetime.strptime(event['start']['dateTime'][:-6], "%Y-%m-%dT%H:%M:%S")
             event_time.append(event_date.strftime("%A, %B %d %Y %I:%M%p"))
         print(event['start']['dateTime'].encode('utf-8'))
-	event_title.append(event['summary'].encode('utf-8'))
+        event_title.append(escape(event['summary']).encode('utf-8'))
 
         print(event['summary'].encode('utf-8'))
         print('')
