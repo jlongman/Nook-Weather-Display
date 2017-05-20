@@ -241,7 +241,7 @@ while True:
     for event in events['items']:
         if 'date' in event['start']:
             print(event['start']['date'].encode('utf-8') + ' All Day')
-        event_time.append("All Day")
+            event_time.append("All Day")
         if 'dateTime' in event['start']:
             event_date = datetime.datetime.strptime(event['start']['dateTime'][:-6], "%Y-%m-%dT%H:%M:%S")
             event_time.append(event_date.strftime("%A, %B %d %Y %I:%M%p"))
