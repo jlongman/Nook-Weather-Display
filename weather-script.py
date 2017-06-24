@@ -176,10 +176,13 @@ def create_image(icons, currentBook, bookCount, highs, lows, day_one, event_titl
         'DAY_FOUR', days_of_week[(day_one + 3 * one_day).weekday()])
 
     print("...")
+    print("time {} title {}".format(len(event_time), len(event_title)));
     output = output.replace('agenda1_date', event_time[0]).replace('agenda1_title', event_title[0]).replace(
-        'agenda2_date', event_time[1]).replace('agenda2_title', event_title[1]).replace('agenda3_date',
-                                                                                        event_time[2]).replace(
-        'agenda3_title', event_title[2])
+        'agenda2_date', event_time[1]).replace('agenda2_title', event_title[1])
+    if len(event_title) > 2 and len(event_time) > 2: 
+       output.replace('agenda3_date', event_time[2]).replace( 'agenda3_title', event_title[2])
+    else:
+       output.replace('agenda3_date', "").replace( 'agenda3_title', "")
     print("...")
     # Write output
     codecs.open('weather-script-output.svg', 'w', encoding='utf-8').write(output)
